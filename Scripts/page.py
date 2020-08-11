@@ -25,8 +25,8 @@ class MainPage(BasePage):
     def get_text_of_getting_started_menu_item(self):
         """Get inner text of menu item 2. Getting Started"""
         WebDriverWait(self.driver, 100).until(
-            lambda driver: self.driver.find_element(*MainPageLocators.GETTING_STARTED_MENU_ITEM))
-        element = self.driver.find_element(*MainPageLocators.GETTING_STARTED_MENU_ITEM)
+            lambda driver: self.driver.find_element(*MainPageLocators.GETTING_STARTED_MENU_ITEM_BY_TEXT))
+        element = self.driver.find_element(*MainPageLocators.GETTING_STARTED_MENU_ITEM_BY_TEXT)
         return element.get_attribute('innerText')
 
     def seekDuplicatedChars(self, text):
