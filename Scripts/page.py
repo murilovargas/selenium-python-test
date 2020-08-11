@@ -30,8 +30,15 @@ class MainPage(BasePage):
         return element.get_attribute('innerText')
 
     def seekDuplicatedChars(self, text):
-        """Seeking duplicated chars, ignoring case and spaces"""
+        """Seeking duplicated chars"""
+        #Ignoring Case and Spaces
         text_to_view = text.lower().replace(' ','')
+        #Only ignoring spaces
+        #text_to_view = text.replace(' ','')
+        #Only ignoring case
+        #text_to_view = text.lower()
+        #Considering case and spaces
+        #text_to_view = text
         count = {}
         repeated_chars = 0
         for s in text_to_view:
