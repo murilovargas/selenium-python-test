@@ -6,6 +6,8 @@ Python 3.8.5 or above
 
 Selenium 3.141.0 or above
 
+ChromeDriver
+
 Any doubts, please check https://selenium-python.readthedocs.io/installation.html
 
 # download source code
